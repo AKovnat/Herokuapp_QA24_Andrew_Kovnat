@@ -16,7 +16,7 @@ import static org.testng.Assert.*;
 
 
 public class Inputs {
-    private static final String URL = "https://the-internet.herokuapp.com/typos";
+    private static final String URL = "https://the-internet.herokuapp.com/inputs";
     private WebDriver driver;
 
     @BeforeClass
@@ -29,16 +29,17 @@ public class Inputs {
 
     }
 
+    @BeforeMethod
+    public void navigate() {
+        driver.get(URL);
+    }
+
     @AfterClass
     public void tearDown() {
         driver.quit();
 
     }
 
-    @BeforeMethod
-    public void navigate() {
-        driver.get(URL);
-    }
 
     @Test
     public void inputsTest() {

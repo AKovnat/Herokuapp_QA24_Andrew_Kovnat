@@ -17,7 +17,7 @@ import static org.testng.Assert.*;
 
 
 public class Typos {
-    private static final String URL = "https://the-internet.herokuapp.com/inputs";
+    private static final String URL = "https://the-internet.herokuapp.com/typos";
     private WebDriver driver;
 
     @BeforeClass
